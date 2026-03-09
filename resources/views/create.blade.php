@@ -80,7 +80,7 @@
 	<div class="container d-flex justify-content-center align-items-center min-vh-100">
 		<div class="card card-create p-4 w-100" style="max-width: 480px;">
 			<h2 class="mb-4 text-center text-primary">Creare Task Nou</h2>
-			<form method="POST" action="/create">
+			<form method="POST" action="/">
 				@csrf
 				<div class="mb-3">
 					<label for="nume" class="form-label">Nume Task</label>
