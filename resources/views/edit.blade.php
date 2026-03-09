@@ -97,8 +97,9 @@
 		<div class="card card-show p-4 w-100" style="max-width: 480px;">
 			<h2 class="mb-4 text-center text-primary">Vizualizare/Editare Task</h2>
 			@if(isset($task))
-			<form method="POST" action="/{{ $task->id }}/update">
+			<form method="POST" action="/{{ $task->id }}">
 				@csrf
+				@method('PUT')
 				<div class="mb-3">
 					<label for="nume" class="form-label">Nume Task</label>
 					<input type="text" class="form-control" id="nume" name="nume" required value="{{ $task->nume }}">
@@ -122,12 +123,12 @@
 				<div class="d-flex gap-2">
 					<button type="submit" class="btn btn-save flex-fill">Finalizează Editarea</button>
 					<a href="/" class="btn btn-back flex-fill">Înapoi</a>
-					<form action="/{{ $task->id }}/delete" method="POST" class="d-inline w-100">
-						@csrf
-						@method('DELETE')
-						<button type="submit" class="btn btn-delete flex-fill w-100" onclick="return confirm('Ești sigur că vrei să ștergi acest task?');">Delete</button>
-					</form>
 				</div>
+			</form>
+			<form action="/{{ $task->id }}/delete" method="POST" class="mt-2">
+				@csrf
+				@method('DELETE')
+				<button type="submit" class="btn btn-delete flex-fill w-100" onclick="return confirm('Ești sigur că vrei să ștergi acest task?');">Delete</button>
 			</form>
 			@else
 				<div class="alert alert-danger text-center shadow-sm">Task-ul nu a fost găsit.</div>
