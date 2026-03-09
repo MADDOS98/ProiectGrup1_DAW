@@ -31,10 +31,6 @@ Aplicația permite:
 - Git : Sestacovski Arina
 
 ---
-*Completați secțiunea de membri după finalizarea proiectului.*
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
 
 ## Contributing
 
