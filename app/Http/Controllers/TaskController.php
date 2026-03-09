@@ -10,12 +10,12 @@ class TaskController extends Controller
     public function index()
     {
         $tasks = Task::all();
-        return view('tasks.index', compact('tasks'));
+        return view('index', compact('tasks'));
     }
 
     public function create()
     {
-        return view('tasks.create');
+        return view('create');
     }
 
     public function store(Request $request)
@@ -31,10 +31,10 @@ class TaskController extends Controller
         return redirect()->route('tasks.index')->with('success', 'Activitatea a fost creată cu succes.');
     }
 
-    public function show($id)
+    public function edit($id)
     {
         $task = Task::findOrFail($id);
-        return view('tasks.show', compact('task'));
+        return view('edit', compact('task'));
     }
 
     public function update(Request $request, $id)
