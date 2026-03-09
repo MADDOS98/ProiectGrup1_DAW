@@ -158,7 +158,11 @@
                     </div>
                     <div class="d-flex justify-content-between mt-auto gap-2">
                         <a href="/{{ $task->id }}" class="btn btn-show flex-fill">Show</a>
-                        <a href="/{{ $task->id }}/delete" class="btn btn-delete flex-fill">Delete</a>
+                        <form action="/{{ $task->id }}/delete" method="POST" class="d-inline w-100">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-delete flex-fill w-100" onclick="return confirm('Ești sigur că vrei să ștergi acest task?');">Delete</button>
+                        </form>
                     </div>
                 </div>
             </div>
