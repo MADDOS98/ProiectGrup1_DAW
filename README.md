@@ -14,7 +14,7 @@ Aplicația permite:
 ## Tehnologii folosite
 - Laravel (PHP)
 - Bootstrap (CSS)
-- MySQL
+- SQLite
 
 ## Instalare și rulare
 1. Clonați proiectul
