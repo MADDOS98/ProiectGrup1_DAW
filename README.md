@@ -25,7 +25,10 @@ Aplicația permite:
 
 ## Membrii echipei
 
-- [Adaugă aici numele celor care au lucrat la proiect]
+- Backend : Mocanu Andrei
+- Frontend : Stroiu Liviu
+- Tester : Doina Liviu
+- Git : Sestacovski Arina
 
 ---
 *Completați secțiunea de membri după finalizarea proiectului.*
